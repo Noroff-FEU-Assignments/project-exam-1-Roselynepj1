@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link href="images/head.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.0-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- preloader -->
+    <div id="preloader">
+      <img src="images/head.png" alt="Logo" />
+      <div class="loader">&nbsp;</div>
+    </div>
+    <!-- preloader -->
+
+    <!-- navigation -->
+    <div class="container">
+      <nav class="navbar">
+        <section class="logo">
+          <a href="index.html"
+            ><img src="images/logo-small.png" alt="Logo"
+          /></a>
+        </section>
+        <section class="navlinks" id="nav-links">
+          <ul class="navlinks-container">
+            <li class="navlink-item">
+              <a href="index.html" class="navlink">Home</a>
+            </li>
+            <li class="navlink-item">
+              <a href="blogs.html" class="navlink">Blogs</a>
+            </li>
+            <li class="navlink-item">
+              <a href="about.html" class="navlink">About</a>
+            </li>
+            <li class="navlink-item">
+              <a href="contact.html" class="navlink">Contact</a>
+            </li>
+          </ul>
+        </section>
+        <section class="search-form-container" id="search-form">
+          <form class="search-form" action="blogs.html">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search"
+              name="search-query"
+            />
+            <button type="submit" class="search-btn">
+              <i class="fa fa-magnifying-glass search-icon"></i>
+            </button>
+          </form>
+        </section>
+        <section class="open-menu">
+          <i class="fas fa-bars fa-2x" id="open-menu"></i>
+          <i class="fas fa-xmark fa-2x" id="close-menu"></i>
+        </section>
+      </nav>
+    </div>
+    <!-- navigation -->
+
+    <main id="content">
+      <section class="page-details container">
+        <div class="page-title">
+          <h4 id="single-post-title">Post Details</h4>
+        </div>
+        <div class="page-breadcrumbs">
+          <a href="index.html" class="breadcrumb">Home</a>
+          <a href="blogs.html" class="breadcrumb">Blogs</a>
+          <a href="javascript:void(0)" class="breadcrumb" id="post-breadcrumb"
+            >Post Title</a
+          >
+        </div>
+      </section>
+      <section id="single-post-loader" class="container">
+        <div class="skeleton is-loading">
+          <div class="latest">
+            <div class="latest-tag"></div>
+            <div class="latest-title"></div>
+            <div class="latest-author">
+              <div class="author-img"></div>
+              <div class="author-name"></div>
+              <div class="post-date"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div id="single-post-head"></div>
+      </section>
+
+      <section class="single-post-container">
+        <div id="single-post" class="container"></div>
+      </section>
+
+      <section class="lightbox-background">
+        <span class="close cursor"><i class="fa fa-xmark"></i></span>
+        <div class="lightbox-content">
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <section class="footer-head">
+          <div class="about">
+            <h4 class="margin-bottom">About</h4>
+            <p class="margin-bottom">
+              Beauty Boulevard is a cosmetics and beauty products trading
+              company since 1998, dealing in skin products for all skin tones
+              and hair textures. the company was established after seeing how
+              both the youth and adults struggle with different skin ailments.
+            </p>
+            <div class="margin-bottom">
+              <b>Email</b> :info@beautyboulevard.com
+            </div>
+            <div><b>Phone</b> : +4740897543</div>
+          </div>
+          <div class="quick-links">
+            <h4 class="margin-bottom">Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="category">
+            <h4 class="margin-bottom">Categories</h4>
+            <ul>
+              <li><a href="">Beautiful Hair</a></li>
+              <li><a href="">Beauty Tips</a></li>
+              <li><a href="">Wellbeing</a></li>
+            </ul>
+          </div>
+          <div class="newsletter">
+            <h4>Weekly newsletter</h4>
+            <p>Get blog articles and offers via email</p>
+            <form>
+              <div class="input-group-with-icon">
+                <input type="email" name="email" placeholder="Your email" />
+                <i class="far fa-envelope"></i>
+              </div>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </section>
+        <section class="footer-bottom">
+          <a href="index.html">
+            <img src="images/logo-small.png" alt="Logo" />
+          </a>
+          <ul class="policies">
+            <li><a href="javascript:void(0)">Terms of use |</a></li>
+            <li><a href="javascript:void(0)">Privacy Policy |</a></li>
+            <li><a href="javascript:void(0)">Cookie Policy</a></li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+    <script type="module" defer src="js/script.js"></script>
+  </body>
+</html>

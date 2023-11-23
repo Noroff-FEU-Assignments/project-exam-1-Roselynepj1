@@ -1,0 +1,137 @@
+.footer {
+  background-color: #e8e8ea;
+  border-top: solid 1px #e8e8ea;
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+}
+.margin-bottom {
+  margin-bottom: 1em;
+}
+.footer-head {
+  display: flex;
+  column-gap: 1em;
+}
+.footer-head .quick-links {
+  flex: 2;
+}
+.footer-head .category {
+  flex: 2;
+}
+.footer-head .newsletter {
+  flex: 4;
+}
+.footer-head .about {
+  flex: 4;
+}
+.footer-head .about p {
+  color: gray;
+}
+
+.footer-head .category ul{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-head .quick-links ul{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-head .category ul li a:hover,.footer-head .quick-links ul li a:hover{
+  color: #4b6bfb;
+}
+
+.footer-bottom {
+  margin-top: 1em;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px #b2b2b6;
+}
+
+.policies {
+  display: flex;
+  column-gap: 0.6em;
+}
+
+.newsletter {
+  background-color: white;
+  border-radius: 6px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.newsletter h4{
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+.newsletter p{
+    margin-bottom: 0.5em;
+    color: gray;
+    text-align: center;
+}
+
+.input-group-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0.5em 0;
+}
+
+.input-group-with-icon input {
+  border:solid 1px silver;
+  padding: 10px 10px;
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #f4f4f5;
+}
+.input-group-with-icon input:focus-visible {
+  outline: #4b6bfb;
+  border: solid 2px #4b6bfb;
+} 
+.input-group-with-icon i {
+  cursor: pointer;
+  color: gray; 
+  position: absolute;
+  right: 10px;
+  background-color: transparent;
+}
+
+.newsletter > *{
+    width: 100%;
+}
+.newsletter form button{
+    width: 100%;
+    background-color: #4b6bfb;
+    color: white;
+    border: none;
+    padding: 0.6em;
+    border-radius: 4px;
+}
+
+/* Extra Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Custom styles for extra small screens (xs) */
+  .footer-head{
+    flex-direction: column-reverse;
+    row-gap: 1em;
+  }
+  .footer-bottom{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1em;
+  }
+  .policies li a{ 
+    text-wrap: nowrap; 
+  }
+}
+
+ 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skeletons</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <style>
+      section {
+        flex: 6;
+      }
+      body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        padding: 4em;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="skeleton is-loading">
+        <div class="image"></div>
+        <div class="content">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="skeleton is-loading">
+        <div class="latest">
+          <div class="latest-tag"></div>
+          <div class="latest-title"></div>
+          <div class="latest-author">
+            <div class="author-img"></div>
+            <div class="author-name"></div>
+            <div class="post-date"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
