@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skeletons</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <style>
+      section {
+        flex: 6;
+      }
+      body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        padding: 4em;
+      }
+    </style>
+    <!-- Hotjar Tracking Code for Beauty Boulevard -->
+    <script>
+      ;(function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            ;(h.hj.q = h.hj.q || []).push(arguments)
+          }
+        h._hjSettings = { hjid: 3749150, hjsv: 6 }
+        a = o.getElementsByTagName('head')[0]
+        r = o.createElement('script')
+        r.async = 1
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv
+        a.appendChild(r)
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=')
+    </script>
+  </head>
+  <body>
+    <section>
+      <div class="skeleton is-loading">
+        <div class="image"></div>
+        <div class="content">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="skeleton is-loading">
+        <div class="latest">
+          <div class="latest-tag"></div>
+          <div class="latest-title"></div>
+          <div class="latest-author">
+            <div class="author-img"></div>
+            <div class="author-name"></div>
+            <div class="post-date"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
